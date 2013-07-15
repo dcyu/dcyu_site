@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daniel Yu</title>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+  <link rel="icon" 
+        type="image/png" 
+        href="../img/yu.png">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="../js/jquery-1.9.1.min.js"></script>
+  <script src="../js/jquery.openCarousel.js"></script>
+</head>
+<body>
+  <div class="nav">
+    <h1 class="logo"><a href="index.html">DANIELYU</a></h1>
+<!--     <ul class="nav-list">
+      <li><a href="index.html#buffer">About Me</a></li>
+      <li><a href="map.html">What I've Coded</a></li>
+      <li><a href="about.html">What I've Done</a></li>
+      <li><a href="about.html">What I Enjoy Doing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul> -->
+  </div>
+
+  <div class="wrapper" id="first">
+    <div class="content">
+      <h1 class="english" title="Languages I speak (proportional to ability).">Hello.</h1>
+      <br>
+      <h1 class="chinese" title="我使用的语言（成正比我的能力）。">你好。</h1>
+      <h1 class="arabic" title=".اللغات التي أتكلم"><span>.</span>السلام عليكم</h1>
+      <br>
+      <h1 class="german" title="Die sprachen die ich sprache.">Hallo.</h1>
+      <h1 class="spanish" title="Los idiomas que hablo.">Hola.</h1>
+      <h1 class="french" title="Les langues que je parle."> Allô.</h1>
+      <h1 class="russian" title="Я не знаю...">здороваться.</h1>
+    </div>
+    <!-- <div class="circle" id="advanced"> -->
+    <!-- </div> -->
+    <!-- <span class="question-mark">?</span> -->
+
+    <div class="down-page">
+       <a href="#second" class="link">↓</a>
+    </div>
+  </div>
+
+  <div class="wrapper" id="second">
+    <div class="overlay"></div>
+    <div class="content">
+    </div>
+
+    <div class="down-page">
+       <a href="#third" class="link">↓</a>
+    </div>
+  </div>
+
+  <div class="wrapper" id="third">
+    <div class="content"></div>
+
+    <div class="down-page">
+       <a href="#fourth" class="link">↓</a>
+    </div>
+  </div>  
+
+  <div class="wrapper" id="fourth">
+    <div class="content">
+      <h1>My most recent frontend projects:</h1>
+
+      <div class="ocarousel" data-ocarousel-period="4000" >
+        <div class="ocarousel_window">
+          
+          <a class="description" href="http://wedid.it/" target="_blank">
+            <div class="wedidit description">            
+            </div>
+          </a>
+
+          <a class="description" href="http://www.carbongroove.com/" target="_blank">
+            <div class="carbongroove description">            
+            </div>
+          </a>
+  
+          <a class="description" href="http://57thandnormal.com/main/57th-and-normal/apps/map" target="_blank">
+            <div class="fifty-seventh description">            
+            </div>
+          </a>          
+
+        </div>
+
+          <a class="carousel-link left" href="#" data-ocarousel-link="left"><</a>
+          <a class="carousel-link right" href="#" data-ocarousel-link="right">></a>
+
+        <div class="ocarousel_indicators"></div>
+      </div>
+
+    </div>
+  </div>  
+
+  <div class="wrapper" id="fifth">
+    <div class="content">
+      <div class="banner">
+        <p>I am also one of the founders of <a href="http://www.projectsam.net" target="_blank" class="external-link">Project SAM</a>, a platform for health clinics in developing countries to manage their inventory via basic mobile phones.</p>
+      </div>
+    </div>
+
+    <div class="down-page">
+       <a href="#sixth" class="link">↓</a>
+    </div>
+  </div>
+
+  <div class="wrapper" id="sixth">
+    <div class="content">
+
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>HTML/CSS, </li>
+        <li>HAML/Sass, </li>
+        <li>JQuery/Javascript, </li>
+        <li>Ruby on Rails, </li>
+        <li>Photoshop</li>
+      </ul>
+
+
+      <h3>Other Skills</h3>
+      <ul>
+        <li>Fluency in Mandarin, </li>
+        <li>Advanced Proficiency in Arabic (Levantine, Egyptian, and Modern Standard dialects), </li>
+        <li>Proficiency in Cantonese, </li>
+        <li>Basic Spanish and German</li>
+      </ul>
+      <ul>
+        <li>Advanced ability with piano, saxophone, clarinet performance in addition to composition and conducting</li>
+      </ul>
+
+      <h3>Things I enjoy doing</h3>
+
+      <ul>
+        <li>Playing music, backpacking adventures, food exploration, and taking naps</li>
+      </ul>
+    
+    </div>
+
+    <div class="down-page">
+       <a href="#seventh" class="link">↓</a>
+    </div>
+
+  </div>
+
+  <div class="wrapper" id="seventh">
+    <div class="content">
+      <h3>If you would like to contact me, please send me an email at <span class="antispam external-link">dcyu at live dot com</span></h3>
+    </div>
+  </div>
+
+
+  <script>
+  // Clear the console
+  console.clear();
+   
+  // Plugin
+  (function ($) {
+  $.fn.antispam = function () {
+  return this.each(function () {
+  var $self = $(this);
+  // Get the text
+  var text = $self.text();
+  // Replace "at" and "dot"
+  var email = text.replace(" at ", "@").replace(" dot ", ".");
+  // Create a link
+  var $link = $("<a></a>");
+  $link.attr("href", "mailto:" + email);
+  $link.text(email);
+  // Replace the span with the link
+  $self.html( $link );
+  });
+  };
+  })(jQuery);
+   
+  $(".antispam").antispam();
+  </script>
+
+
+  <script>
+    $(document).ready(function(){
+      $('.link').on('click',function (e) {
+          e.preventDefault();
+          var target = this.hash,
+          $target = $(target);
+          $('html, body').stop().animate({
+              'scrollTop': $target.offset().top
+          }, 1000, 'swing', function () {
+              window.location.hash = target;
+          });
+          $(this).parent().fadeOut();
+      });
+    });
+  </script>
+
+  <script>
+
+    $(window).scroll(function () {
+      var height = $('body').height();
+      var scrollTop = $(window).scrollTop();
+
+      if (scrollTop>(height-65)){
+        $('#second').css({ 'position': 'fixed', 'top': '65px'});
+        $('#first h1').fadeOut(500);
+        $('#second .down-page').css('bottom', '65px');
+      }
+      if (scrollTop<(height-65)){
+        $('#second').css({ 'position': 'absolute', 'top': '100%'});
+        $('#first h1').fadeIn(1000);
+      }
+
+      if (scrollTop>(height*2-75)){
+        $('#third').css({ 'position': 'fixed', 'top' : '75px' });
+        $('.overlay').fadeIn(1000);
+        $('#third .down-page').css('bottom', '75px');
+      }
+      if (scrollTop<(height*2-75)){
+        $('#third').css({ 'position': 'absolute', 'top' : '200%' });
+        $('.overlay').fadeOut(200);
+      }
+
+      if (scrollTop>(height*3-85)){
+        $('#fourth').css({ 'position': 'fixed', 'top' : '85px' });
+        $('#fourth .down-page').css('bottom', '85px');
+      }
+      if (scrollTop<(height*3-85)){
+        $('#fourth').css({ 'position': 'absolute', 'top' : '300%' });
+      }
+
+      if (scrollTop>(height*4-95)){
+        $('#fifth').css({ 'position': 'fixed', 'top' : '95px' });
+        $('#fifth .down-page').css('bottom', '95px');
+      }
+      if (scrollTop<(height*4-95)){
+        $('#fifth').css({ 'position': 'absolute', 'top' : '400%' });
+      }
+
+      if (scrollTop>(height*5-105)){
+        $('#sixth').css({ 'position': 'fixed', 'top' : '105px' });
+        $('#sixth .down-page').css('bottom', '105px');
+      }
+      if (scrollTop<(height*5-105)){
+        $('#sixth').css({ 'position': 'absolute', 'top' : '500%' });
+      }
+
+    });
+
+  </script>
+
+  <script>
+    $(window).scroll(function () {
+      $('[class^="down"]').each(function () { 
+        if (($(this).offset().top - $(window).scrollTop()) < 400) { //<---mark the $(this).offset().top of current object
+          $(this).stop().fadeTo(100, 0); //<----fadeOut the current obj
+          } 
+        else {
+              // $(this).stop().fadeTo('fast', 1); //<----fadeIn the current obj
+          }
+       });
+
+    });
+  </script>
+
+  <script>
+    $(window).scroll(function () {
+      $('[class^="circle"],.question-mark').each(function () { 
+        if (($(this).offset().top - $(window).scrollTop()) < 300) { //<---mark the $(this).offset().top of current object
+          $(this).stop().fadeTo(100, 0); //<----fadeOut the current obj
+          } 
+        else {
+              $(this).stop().fadeTo(100, 1); //<----fadeIn the current obj
+          }
+       });
+
+    });
+  </script>
+
+  <script>
+    $("#first h1").addClass("masterTooltip");
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $('.masterTooltip').hover(function(){
+              // Hover over code
+              var title = $(this).attr('title');
+              $(this).data('tipText', title).removeAttr('title');
+              $('<p class="tooltip"></p>')
+              .text(title)
+              .appendTo('body')
+              .fadeIn('fast');
+      }, function() {
+              // Hover out code
+              $(this).attr('title', $(this).data('tipText'));
+              $('.tooltip').remove();
+      }).mousemove(function(e) {
+              var mousex = e.pageX; //Get X coordinates
+              var mousey = e.pageY; //Get Y coordinates
+              $('.tooltip')
+              .css({ top: mousey, left: mousex })
+      });
+    });
+  </script>
+
+  <script>
+    $("#composition-link").click(function() {
+      $("#composition").fadeIn();
+    });
+  </script>
+
+
+
+</body>
+</html>
