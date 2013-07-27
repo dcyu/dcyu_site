@@ -89,6 +89,7 @@ h1 {
   font-family: "Futura", "futurax", sans-serif;
   position: absolute;
   z-index: 0;
+  background-repeat: no-repeat;
 }
 #first {
   background-image: url("../img/textured_paper.png");
