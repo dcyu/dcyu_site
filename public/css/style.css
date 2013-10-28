@@ -75,7 +75,7 @@ h1 {
   color: #fff;
 }
 .external-link, .external-link a {
-  color: #551a8b;
+  color: #820BBB;
 }
 .external-link a:hover {
   text-decoration: underline;
@@ -193,7 +193,7 @@ h1 {
 }
 .banner {
   width: 50%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.8);
   color: #fff;
   float: left;
 }
