@@ -1,14 +1,10 @@
-use Rack::Static, 
-  :urls => ["/img", "/js", "/css"],
-  :root => "public"
+require 'rubygems'
+require 'bundler'
+Bundler.require(:default)
+require 'sass/plugin/rack'
+require './app'
 
-run lambda { |env|
-  [
-    200, 
-    {
-      'Content-Type'  => 'text/html', 
-      'Cache-Control' => 'public, max-age=86400' 
-    },
-    File.open('public/html/index.html', File::RDONLY)
-  ]
-}
+run SinatraBootstrap
+
+# use coffeescript for javascript
+use Rack::Coffee, root: 'public', urls: '/javascripts'

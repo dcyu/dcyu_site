@@ -1,0 +1,88 @@
+%nav.nav
+  %h1.logo
+    %a{:href => "/"} DANIELYU
+
+#first.wrapper
+  .content
+    %h1.english{:title => "Languages I speak (proportional to ability)."} Hello.
+    %br
+      %h1.chinese{:title => "我使用的语言（成正比我的能力）。"} 你好。
+      %h1.arabic{:title => ".اللغات التي أتكلم"}
+        %span> .
+        السلام عليكم
+      %br
+        %h1.spanish{:title => "Los idiomas que hablo."} Hola.
+        %h1.german{:title => "Die sprachen die ich sprache."} Hallo.
+        %h1.french{:title => "Les langues que je parle."} Allô.
+        %h1.russian{:title => "Я не знаю..."} здороваться.
+
+  .down-page
+    %a.link{:href => "#second"} ↓
+#second.wrapper
+  .overlay
+  .content
+  .down-page
+    %a.link{:href => "#third"} ↓
+#third.wrapper
+  .content
+  .down-page
+    %a.link{:href => "#fourth"} ↓
+#fourth.wrapper
+  .content
+    %h1 My most recent web development projects:
+    .ocarousel{"data-ocarousel-period" => "4000"}
+      .ocarousel_window
+        %a.description{:href => "http://wedid.it/", :target => "_blank"}
+          .wedidit.description
+        %a.description{:href => "http://bosoul.com/", :target => "_blank"}
+          .bosoul.description
+        %a.description{:href => "http://www.jehpancreaticfoundation.org/", :target => "_blank"}
+          .jeh.description
+        %a.description{:href => "http://www.carbongroove.com/", :target => "_blank"}
+          .carbongroove.description
+        %a.description{:href => "http://57thandnormal.com/main/57th-and-normal/apps/map", :target => "_blank"}
+          .fifty-seventh.description
+      %a.carousel-link.left{"data-ocarousel-link" => "left", :href => "#"} <
+      %a.carousel-link.right{"data-ocarousel-link" => "right", :href => "#"} >
+      .ocarousel_indicators
+#fifth.wrapper
+  .content
+    .banner
+      %p
+        I am also one of the founders of
+        = succeed "," do
+          %a.external-link{:href => "http://www.projectsam.net", :target => "_blank"} Project SAM
+        a platform for health clinics in developing countries to manage their inventory via basic mobile phones.
+  .down-page
+    %a.link{:href => "#sixth"} ↓
+#sixth.wrapper
+  .content
+    %h3 Technical Skills
+    %ul
+      %li HTML5/CSS3,
+      %li Haml/Sass,
+      %li jQuery/Coffescript/Javascript,
+      %li Responsive Design/Mobile Web Optimization,
+      %li R,
+      %li Ruby on Rails,
+      %li Photoshop,
+      %li Python,
+      %li Pandas (Python Data Science Package)
+    %h3 Other Skills
+    %ul
+      %li Fluency in Mandarin,
+      %li Advanced Proficiency in Arabic (Levantine, Egyptian, and Modern Standard dialects),
+      %li Proficiency in Spanish and Cantonese,
+      %li Basic French and German
+    %ul
+      %li Advanced ability with piano, saxophone, clarinet performance in addition to composition and conducting
+    %h3 Things I enjoy doing
+    %ul
+      %li Playing music, backpacking adventures, food exploration, and taking naps
+  .down-page
+    %a.link{:href => "#seventh"} ↓
+#seventh.wrapper
+  .content
+    %h3
+      If you would like to contact me, please send me an email at
+      %span.antispam.external-link dcyu at live dot com

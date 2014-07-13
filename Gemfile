@@ -1,8 +1,12 @@
-# A sample Gemfile
 source "https://rubygems.org"
 
-source :rubygems
-gem 'rack'
+gem 'rake'
+gem 'sinatra'
+gem 'shotgun'
+gem 'haml'
 
+# Sass & Compass
+gem 'sass'
+gem 'compass'
+gem 'rack-coffee'
 
-# gem "rails"
